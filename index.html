@@ -48,6 +48,28 @@
          <p class="project-title">Crispy Fish</p>
       </a>
     </div>
+
+    <div class="skill-table">
+      <table align="center">
+        <caption>Skills</caption>
+        <tr>
+          <th>Programing Language</th>
+          <th>Level</th>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Noob</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>Newbie</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Noobie</td>
+        </tr>
+      </table>
+    </div>
   </section>
 
   <section id="contact">
@@ -60,7 +82,7 @@
         <i class="fab fa-facebook-square"></i> Facebook</a>
       <a href="https://github.com/T0NG-J" target="_blank">
         <i class="fab fa-github"></i> GitHub</a>
-      <a href="mailto:tong20125@gmail.com">
+      <a href="mailto:tong20125@gmail.com" id="email">
         <i class="fas fa-at"></i> Send a mail</a>
     </div>
   </section>
@@ -75,4 +97,10 @@
   </footer>
 
 </body>
+  <script>
+    let email = document.querySelector("#email");
+    email.addEventListener('click', () => {
+      let input = prompt("Please Enter your Email for Contact");
+    })
+  </script>
 </html>
